@@ -1,0 +1,44 @@
+.banner {
+  background: url(../img/teste_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+@media (min-width: 1200px) {
+  .about {
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .btn {
+      padding: .5rem 3rem;
+      margin-top: 30px;
+    }
+    img {
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner {
+    background-position: 0% 100%;
+
+    .btn {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  .about {
+    .btn {
+      width: 100%;
+      margin: 20px 0 40px 0;
+    }
+  }
+}

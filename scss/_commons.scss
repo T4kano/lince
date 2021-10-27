@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+  color: #373E47;
+}
+
+.banner {
+  padding: 6rem 0;
+
+  h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .btn {
+    padding: .5rem 3rem;
+  }
+}
+
+b,
+span,
+strong {
+  color: $primary;
+}
