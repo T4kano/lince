@@ -39,8 +39,8 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 68, 78, 89;
-  --bs-body-bg-rgb: 237, 241, 246;
+  --bs-body-color-rgb: 75, 93, 119;
+  --bs-body-bg-rgb: 245, 247, 250;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -48,8 +48,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #444E59;
-  --bs-body-bg: #EDF1F6;
+  --bs-body-color: #4B5D77;
+  --bs-body-bg: #F5F7FA;
 }
 
 *,
@@ -227,12 +227,12 @@ sup {
 }
 
 a {
-  color: #121212;
+  color: #172230;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #0e0e0e;
+  color: #121b26;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -610,7 +610,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #EDF1F6;
+  background-color: #F5F7FA;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2255,7 +2255,7 @@ progress {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #444E59;
+  color: #4B5D77;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -2283,7 +2283,7 @@ progress {
 }
 
 .btn:hover {
-  color: #444E59;
+  color: #4B5D77;
 }
 
 .btn-check:focus + .btn, .btn:focus {
@@ -2900,12 +2900,12 @@ fieldset:disabled .btn {
 
 .btn-link {
   font-weight: 400;
-  color: #121212;
+  color: #172230;
   text-decoration: underline;
 }
 
 .btn-link:hover {
-  color: #0e0e0e;
+  color: #121b26;
 }
 
 .btn-link:disabled, .btn-link.disabled {

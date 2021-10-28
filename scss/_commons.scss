@@ -9,15 +9,15 @@ h4,
 h5,
 h6 {
   font-family: $font-family-title;
-  color: #373E47;
+  color: #172230;
 }
 
-.banner {
+.header {
   padding: 6rem 0;
-  background: url(../img/teste_bg.jpg);
+  background: url(../img/headerbg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 100% 50%;
 
   h1 {
     font-size: 3em;
@@ -37,8 +37,12 @@ h6 {
 
 .plans {
   padding: 4rem 0;
-  background-color: #DCE3EE;
+  background-color: #EDF1F6;
   text-align: center;
+
+  p {
+    font-size: 24px;
+  }
 
   .btn {
     width: 100%;
@@ -55,7 +59,7 @@ h6 {
 
     &:hover {
       transform: scale(1.04);
-      box-shadow: 0 30px 40px -30px rgba($color: #121212, $alpha: 0.7);
+      box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
     }
   }
 
@@ -67,6 +71,55 @@ h6 {
     font-size: 24px;
     font-weight: 700;
     color: #fff;
+  }
+}
+
+.table {
+  .card {
+    &__content {
+      transition: .4s cubic-bezier(.86, .01, .15, .99);
+      cursor: pointer;
+      position: relative;
+      border-radius: 8px;
+      padding: 2rem;
+      height: 100%;
+      background-color: #EDF1F6;
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        position: relative;
+
+        &::before {
+          content: "";
+          transition: all .4s cubic-bezier(.86, .01, .15, .99);
+          position: absolute;
+          bottom: -4px;
+          left: -8px;
+          height: 15px;
+          width: 0;
+          background-color: #BFCDDF;
+          z-index: -1;
+        }
+      }
+      
+      &:hover {
+        transform: scale(1.04);
+        z-index: 10;
+        background-color: #E7ECF3;
+        box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
+        h2::before {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: -8px;
+          height: 15px;
+          width: 150px;
+          background-color: #BFCDDF;
+          z-index: -1;
+        }
+      }
+    }
   }
 }
 
@@ -94,7 +147,7 @@ h6 {
     &.active.center {
       img {
         transform: scale(1);
-        box-shadow: 0 30px 40px -30px rgba($color: #121212, $alpha: 0.7);
+        box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
       }
     }
   }
@@ -115,8 +168,8 @@ h6 {
     content: "";
     position: absolute;
     height: 100%;
-    border-top: 4px solid #9CA7B2;
-    border-bottom: 4px solid #9CA7B2;
+    border-top: 4px solid $primary;
+    border-bottom: 4px solid $primary;
     width: 50%;
   }
 }
@@ -126,6 +179,8 @@ span,
 strong {
   color: $primary;
 }
+
+// Responsive
 
 @media (min-width: 1200px) {
   .about {
@@ -151,7 +206,7 @@ strong {
 }
 
 @media (max-width: 991.98px) {
-  .banner {
+  .header {
     background-position: 0% 100%;
 
     .btn {
