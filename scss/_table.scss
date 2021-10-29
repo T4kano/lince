@@ -1,0 +1,48 @@
+.table {
+  .card {
+    &__content {
+      transition: .4s cubic-bezier(.86, .01, .15, .99);
+      cursor: pointer;
+      position: relative;
+      border-radius: 8px;
+      padding: 2rem;
+      height: 100%;
+      background-color: #EDF1F6;
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        position: relative;
+
+        &::before {
+          content: "";
+          transition: all .4s cubic-bezier(.86, .01, .15, .99);
+          position: absolute;
+          bottom: -4px;
+          left: -8px;
+          height: 15px;
+          width: 0;
+          background-color: #BFCDDF;
+          z-index: -1;
+        }
+      }
+      
+      &:hover {
+        transform: scale(1.04);
+        z-index: 10;
+        background-color: #E7ECF3;
+        box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
+        h2::before {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: -8px;
+          height: 15px;
+          width: 150px;
+          background-color: #BFCDDF;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

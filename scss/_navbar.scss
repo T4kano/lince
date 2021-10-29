@@ -6,7 +6,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -31,9 +31,32 @@ header {
   }
 }
 
-.nav__brand {
-  width: 120px;
-  max-width: 120px;
+.brand {
+  position: relative;
+  color: $primary;
+
+  &__lince {
+    width: 120px;
+    max-width: 120px;
+    margin-right: 1rem;
+  }
+
+  &__guide {
+    width: 120px;
+    max-width: 120px;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    height: 40px;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    background-color: $primary;
+    margin: 2px 0;
+  }
 }
 
 .nav__list {
@@ -68,7 +91,9 @@ header {
 }
 
 @media (max-width: 991.98px) {
-  html, body {
+
+  html,
+  body {
     position: relative;
     overflow-x: hidden !important;
   }
@@ -106,7 +131,9 @@ header {
   from {
     opacity: 0;
     transform: translateX(50px);
-  } to {
+  }
+
+  to {
     opacity: 1;
   }
 }
@@ -115,9 +142,11 @@ header {
   .__1 {
     transform: rotate(-315deg) translate(4px, 8px);
   }
+
   .__2 {
     opacity: 0;
   }
+
   .__3 {
     transform: rotate(315deg) translate(3px, -7px);
   }

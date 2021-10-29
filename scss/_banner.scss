@@ -1,0 +1,36 @@
+.banner {
+  padding: 6rem 0;
+  background: url(../img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  &__content {
+    margin-bottom: 5rem;
+  }
+
+  h1, p {
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+
+  b {
+    color: #839EC3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    h1 {
+      font-size: 80px;
+    }
+
+    p {
+      font-size: 24px
+    }
+
+    &__content {
+      margin-bottom: 10rem;
+    }
+  }
+}

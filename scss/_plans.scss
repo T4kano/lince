@@ -1,0 +1,44 @@
+.plans {
+  padding: 4rem 0;
+  background-color: #EDF1F6;
+  text-align: center;
+
+  p {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 100%;
+    border: 8px solid $primary;
+    margin-bottom: 40px;
+    transition: .4s cubic-bezier(.86, .01, .15, .99);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
+    }
+  }
+
+  &__title {
+    text-align: center;
+    background: $primary;
+    border-radius: 100px;
+    padding: .5rem 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .plans .btn {
+    margin-bottom: 40px;
+  }
+}

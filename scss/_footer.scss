@@ -1,0 +1,11 @@
+footer {
+  background-color: $primary;
+  color: lighten($primary, 50);
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  footer {
+    font-size: 12px;
+  }
+}

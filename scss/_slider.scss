@@ -1,0 +1,36 @@
+.slider {
+  text-align: center;
+
+  p {
+    font-weight: 600;
+    color: $primary;
+  }
+
+  img {
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    border: 10px solid $primary;
+  }
+
+  .owl-item {
+    cursor: grab;
+
+    img {
+      transition: .4s cubic-bezier(.86, .01, .15, .99);
+      transform: scale(0.7);
+    }
+
+    &.active.center {
+      img {
+        transform: scale(1);
+        box-shadow: 0 30px 40px -30px rgba($color: #17212E, $alpha: 0.7);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .slider img {
+    border: 8px solid $primary;
+  }
+}
