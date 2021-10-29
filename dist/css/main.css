@@ -19,7 +19,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8vh;
+  height: 10vh;
   padding: 0 4rem;
 }
 
@@ -45,20 +45,20 @@ header a.active {
 }
 
 .brand__lince {
-  width: 120px;
-  max-width: 120px;
+  width: 100px;
+  max-width: 100px;
   margin-right: 1rem;
 }
 
 .brand__guide {
-  width: 120px;
-  max-width: 120px;
+  width: 100px;
+  max-width: 100px;
   position: relative;
 }
 
 .brand::before {
   content: "";
-  height: 40px;
+  height: 30px;
   width: 2px;
   top: 0;
   left: 50%;
@@ -105,6 +105,27 @@ header a.active {
   margin: 6px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (min-width: 1400px) {
+  .brand__lince {
+    width: 120px;
+    max-width: 120px;
+  }
+  .brand__guide {
+    width: 120px;
+    max-width: 120px;
+  }
+  .brand::before {
+    content: "";
+    height: 40px;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    background-color: #2F4462;
+    margin: 2px 0;
+  }
 }
 
 @media (max-width: 991.98px) {

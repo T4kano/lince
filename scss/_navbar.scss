@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
     padding: 0 4rem;
   }
 
@@ -36,20 +36,20 @@ header {
   color: $primary;
 
   &__lince {
-    width: 120px;
-    max-width: 120px;
+    width: 100px;
+    max-width: 100px;
     margin-right: 1rem;
   }
 
   &__guide {
-    width: 120px;
-    max-width: 120px;
+    width: 100px;
+    max-width: 100px;
     position: relative;
   }
 
   &::before {
     content: "";
-    height: 40px;
+    height: 30px;
     width: 2px;
     top: 0;
     left: 50%;
@@ -88,6 +88,32 @@ header {
     margin: 6px;
     transition: 0.3s;
   }
+}
+
+@media (min-width: 1400px) {
+  .brand {
+    &__lince {
+      width: 120px;
+      max-width: 120px;
+    }
+
+    &__guide {
+      width: 120px;
+      max-width: 120px;
+    }
+
+    &::before {
+      content: "";
+      height: 40px;
+      width: 2px;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      background-color: $primary;
+      margin: 2px 0;
+    }
+  }
+
 }
 
 @media (max-width: 991.98px) {
