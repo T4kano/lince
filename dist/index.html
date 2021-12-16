@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.ico" />
@@ -46,7 +46,7 @@
     <nav class="container">
       <a href="#" class="brand">
         <img class="brand__lince" src="img/logo_lince.svg" alt="Lince Logo" />
-        <img class="brand__guide" src="img/logo_guide.svg" alt="Guide Logo" />
+
       </a>
       <div class="nav__toggler">
         <div class="__1"></div>
@@ -54,10 +54,12 @@
         <div class="__3"></div>
       </div>
       <ul class="nav__list">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#renda">Renda Variável</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contato">Contato</a></li>
         <li><a href="#" class="btn btn-primary">Invista agora</a></li>
+        <li><a href="#"><img class="brand__guide" src="img/logo_guide.svg" alt="Guide Logo" /></a></li>
       </ul>
     </nav>
   </header>
@@ -101,35 +103,39 @@
   <!-- About End -->
 
   <!-- Plans Start -->
-  <div class="container-fluid plans">
+  <div class="container-fluid plans" id="planos">
     <div class="container">
       <div class="big-title">
         <h1>Escolha <b>seu plano</b></h1>
       </div> <!-- /big-title -->
-      <div class="row">
-        <div class="col-lg-3">
-          <img src="img/private.png" alt="" />
-          <p class="plans__title">Private</p>
-          <p>Investimentos a partir de <b>R$ 5mi</b></p>
-          <a href="#" class="btn btn-outline-primary btn-lg">Proteja seu patrimônio</a>
-        </div>
-        <div class="col-lg-3">
-          <img src="img/alta_renda.png" alt="" />
-          <p class="plans__title">Alta Renda</p>
-          <p>Investimentos entre <b>R$ 1mi e R$ 5mi</b></p>
-          <a href="#" class="btn btn-outline-primary btn-lg">Cuide do seu capital</a>
-        </div>
-        <div class="col-lg-3">
-          <img src="img/exclusive.png" alt="" />
-          <p class="plans__title">Exclusive</p>
-          <p>Investimentos entre <b>R$ 300mil a R$ 1mi</b></p>
-          <a href="#" class="btn btn-outline-primary btn-lg">Cresça conosco</a>
-        </div>
-        <div class="col-lg-3">
-          <img src="img/sob_demanda.png" alt="" />
-          <p class="plans__title">Sob-demanda</p>
-          <p>Investimentos entre <b>R$ 100mil a R$ 300mil</b></p>
-          <a href="#" class="btn btn-outline-primary btn-lg">Invista melhor</a>
+      <div class="row g-5 g-lg-2">
+        <div class="col-lg-3 card">
+          <div class="card__content">
+            <p class="plans__title">Private</p>
+            <p>Investimentos a partir de <b>R$ 5mi</b></p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Proteja seu patrimônio</a>
+          </div>
+        </div> <!-- /col -->
+        <div class="col-lg-3 card">
+          <div class="card__content">
+            <p class="plans__title">Alta Renda</p>
+            <p>Investimentos entre <b>R$ 1mi e R$ 5mi</b></p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Cuide do seu capital</a>
+          </div>
+        </div> <!-- /col -->
+        <div class="col-lg-3 card">
+          <div class="card__content">
+            <p class="plans__title">Exclusive</p>
+            <p>Investimentos entre <b>R$ 300mil a R$ 1mi</b></p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Cresça conosco</a>
+          </div>
+        </div> <!-- /col -->
+        <div class="col-lg-3 card">
+          <div class="card__content">
+            <p class="plans__title">Sob-demanda</p>
+            <p>Investimentos entre <b>R$ 100mil a R$ 300mil</b></p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Invista melhor</a>
+          </div>
         </div>
       </div> <!-- /row -->
     </div> <!-- /container -->
@@ -137,7 +143,7 @@
   <!-- Plans End -->
 
   <!-- Table Start -->
-  <div class="container-fluid py-5">
+  <div class="container-fluid py-5" id="renda">
     <div class="container table py-5">
       <div class="row g-5 g-lg-2">
         <div class="col-lg-3">
@@ -187,7 +193,7 @@
   <!-- Banner End -->
 
   <!-- Sliders Start -->
-  <div class="container pt-5">
+  <div class="container pt-5" id="equipe">
     <div class="big-title">
       <h1>Nossa Equipe</h1>
     </div>
@@ -258,7 +264,7 @@
   <!-- Map End -->
 
   <!-- Contact Start -->
-  <div class="container py-5">
+  <div class="container py-5" id="contato">
     <div class="row">
       <div class="col-lg-8">
         <form>
@@ -293,17 +299,23 @@
           </svg>
           <p>(11) 3358 - 8745</p>
         </div>
-        <p>contato@linceinvestimento.com.br</p>
+        <p>atendimento@linceinvest.com.br</p>
         <div class="social__icons">
           <div class="icon">
-            <img src="img/instagram.svg" />
+            <a href="https://www.instagram.com/linceinvestimentos/" target="_blank">
+              <img src="img/instagram.svg" />
+            </a>
           </div>
           <div class="icon">
-            <img src="img/facebook.svg" />
+            <a href="https://www.facebook.com/Lince-Investimentos-112392014569137" target="_blank">
+              <img src="img/facebook.svg" />
+            </a>
           </div>
+          <!--
           <div class="icon">
             <img src="img/whatsapp.svg" />
           </div>
+          -->
         </div>
       </div>
     </div>

@@ -42,6 +42,18 @@ header a.active {
 .brand {
   position: relative;
   color: #2F4462;
+  /*
+  &::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    background-color: $primary;
+    margin: 2px 0;
+  }
+  */
 }
 
 .brand__lince {
@@ -54,17 +66,6 @@ header a.active {
   width: 100px;
   max-width: 100px;
   position: relative;
-}
-
-.brand::before {
-  content: "";
-  height: 30px;
-  width: 2px;
-  top: 0;
-  left: 50%;
-  position: absolute;
-  background-color: #2F4462;
-  margin: 2px 0;
 }
 
 .nav__list {
@@ -108,6 +109,20 @@ header a.active {
 }
 
 @media (min-width: 1400px) {
+  .brand {
+    /*
+    &::before {
+      content: "";
+      height: 40px;
+      width: 2px;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      background-color: $primary;
+      margin: 2px 0;
+    }
+    */
+  }
   .brand__lince {
     width: 120px;
     max-width: 120px;
@@ -115,16 +130,6 @@ header a.active {
   .brand__guide {
     width: 120px;
     max-width: 120px;
-  }
-  .brand::before {
-    content: "";
-    height: 40px;
-    width: 2px;
-    top: 0;
-    left: 50%;
-    position: absolute;
-    background-color: #2F4462;
-    margin: 2px 0;
   }
 }
 
@@ -214,7 +219,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif", system-ui, -apple-system, serif;
+  font-family: "Roboto", system-ui, -apple-system, serif;
   color: #172230;
 }
 
@@ -325,12 +330,16 @@ strong {
   text-align: center;
 }
 
-.plans p {
-  font-size: 24px;
+.plans .card__content {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 4px 17px #E6E6E6;
+          box-shadow: 2px 4px 17px #E6E6E6;
 }
 
 .plans .btn {
-  width: 100%;
+  width: 90%;
+  margin: 2rem 0;
 }
 
 .plans img {
@@ -351,14 +360,20 @@ strong {
           box-shadow: 0 30px 40px -30px rgba(23, 33, 46, 0.7);
 }
 
-.plans__title {
+.plans p.plans__title {
   text-align: center;
   background: #2F4462;
-  border-radius: 100px;
+  border-radius: 8px 8px 0 0;
   padding: .5rem 0;
   font-size: 24px;
   font-weight: 700;
   color: #fff;
+  margin: 0 0 2rem 0;
+}
+
+.plans p {
+  font-size: 24px;
+  margin: 0 8px;
 }
 
 @media (max-width: 991.98px) {
@@ -511,6 +526,15 @@ strong {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.social__icons a {
+  line-height: 0;
+}
+
+.social__icons img {
+  width: 100%;
+  height: auto;
 }
 
 .social__icons .icon {

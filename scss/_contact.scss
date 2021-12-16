@@ -16,6 +16,15 @@
     color: #fff;
     display: inline-flex;
 
+    a {
+      line-height: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
     .icon {
       cursor: pointer;
       display: flex;

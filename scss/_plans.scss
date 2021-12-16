@@ -3,12 +3,15 @@
   background-color: #EDF1F6;
   text-align: center;
 
-  p {
-    font-size: 24px;
+  .card__content {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 2px 4px 17px #E6E6E6;
   }
 
   .btn {
-    width: 100%;
+    width: 90%;
+    margin: 2rem 0;
   }
 
   img {
@@ -26,14 +29,20 @@
     }
   }
 
-  &__title {
+  p.plans__title {
     text-align: center;
     background: $primary;
-    border-radius: 100px;
+    border-radius: 8px 8px 0 0;
     padding: .5rem 0;
     font-size: 24px;
     font-weight: 700;
     color: #fff;
+    margin: 0 0 2rem 0;
+  }
+
+  p {
+    font-size: 24px;
+    margin: 0 8px;
   }
 }
 
